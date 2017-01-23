@@ -12,6 +12,7 @@
 		8448615C1E36399100679E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448615A1E36399100679E80 /* Main.storyboard */; };
 		8448615E1E36399100679E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448615D1E36399100679E80 /* Assets.xcassets */; };
 		844861611E36399100679E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448615F1E36399100679E80 /* LaunchScreen.storyboard */; };
+		A26DED067FC18A5DEFA8A5BC /* Pods_KGTestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D381A5DE0895DC59F103EDA1 /* Pods_KGTestSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		8448615D1E36399100679E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844861601E36399100679E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844861621E36399100679E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A669A38DCDF7B6F57054B37D /* Pods-KGTestSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGTestSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KGTestSwift/Pods-KGTestSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		D381A5DE0895DC59F103EDA1 /* Pods_KGTestSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KGTestSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2DCB164F32F12553656646A /* Pods-KGTestSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGTestSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-KGTestSwift/Pods-KGTestSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A26DED067FC18A5DEFA8A5BC /* Pods_KGTestSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33F0D544C10EB83CCD8B33EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A669A38DCDF7B6F57054B37D /* Pods-KGTestSwift.debug.xcconfig */,
+				F2DCB164F32F12553656646A /* Pods-KGTestSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8448614A1E36399100679E80 = {
 			isa = PBXGroup;
 			children = (
 				844861551E36399100679E80 /* KGTestSwift */,
 				844861541E36399100679E80 /* Products */,
+				33F0D544C10EB83CCD8B33EF /* Pods */,
+				E67096C5A6AD72CF6750DA25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = KGTestSwift;
 			sourceTree = "<group>";
 		};
+		E67096C5A6AD72CF6750DA25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D381A5DE0895DC59F103EDA1 /* Pods_KGTestSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844861651E36399100679E80 /* Build configuration list for PBXNativeTarget "KGTestSwift" */;
 			buildPhases = (
+				3C346353916F846963EEED36 /* [CP] Check Pods Manifest.lock */,
 				8448614F1E36399100679E80 /* Sources */,
 				844861501E36399100679E80 /* Frameworks */,
 				844861511E36399100679E80 /* Resources */,
+				428997E4227D4ED6B0AF49CC /* [CP] Embed Pods Frameworks */,
+				198046327A9318CB53AD87AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		198046327A9318CB53AD87AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KGTestSwift/Pods-KGTestSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C346353916F846963EEED36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		428997E4227D4ED6B0AF49CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KGTestSwift/Pods-KGTestSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8448614F1E36399100679E80 /* Sources */ = {
@@ -258,6 +333,7 @@
 		};
 		844861661E36399100679E80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A669A38DCDF7B6F57054B37D /* Pods-KGTestSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KGTestSwift/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		844861671E36399100679E80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DCB164F32F12553656646A /* Pods-KGTestSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KGTestSwift/Info.plist;
